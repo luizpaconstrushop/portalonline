@@ -1,0 +1,129 @@
+*{margin:0; padding:0;}
+
+div#global{
+	width:580px;
+	background:#fff;
+	border:1px solid #ccc;
+	padding:10px;
+	margin:20px auto;
+}
+
+div#global div.porcentagem{
+	float:left;
+	width:570px;
+	padding:5px;
+	background:#fff;
+	border:1px solid #069;
+}
+div#global div.porcentagem span.valor{
+	float:left;
+	display:block;
+	background:#069;
+}
+div#global div.porcentagem span.valor p{
+	font:15px tahoma, arial, helvetica;
+	color:#fff;
+	text-shadow:#000 0 1px 0;
+	margin:5px;
+}
+div.msgtext{
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width:350px;
+	padding:5px;
+	font:16px "Trebuchet MS"	, tahoma, arial, helvetica;
+	color:#FFF;
+	text-align:center;
+}
+div.mensagens{
+	float:left;
+	width:570px;
+	padding:5px;
+	border:1px solid #036;
+	background:#8FB8FA;
+	font:16px "Trebuchet MS", tahoma, arial, helvetica;
+	color:#fff;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+div#formulario{
+	float:left;
+	width:560px;
+	padding:10px;
+	background:#eaeaea;
+	border:1px solid #ccc;
+}
+div#formulario label input{margin-top:5px;}
+div#formulario #btnEnviar{
+	float:right;
+	padding:5px;
+	background:#069;
+	font:14px "Trebuchet MS", tahoma, arial, helvetica;
+	color:#fff;
+	text-shadow:#000 0 1px 0;
+	border:1px solid #036;
+}
+div#formulario #btnEnviar:hover{cursor:pointer; background:#036;}
+#sucesso{
+	background-color:#fff;
+	width:300px;
+	margin:0 auto;
+	position:relative;
+	top:150px;
+	border:1px solid #F1F1F1;
+	padding:30px;
+}
+.acomodar{
+	margin:0 auto;
+	width:400px;
+	color:#007ed3;
+}
+.txt{
+	border:thin solid #FF;
+	box-shawdow: 0 2px 10px #FF;
+	height:40px;
+	width:250px;
+	
+}
+.txt:focus{
+	border:thin solid #8B0000;
+	box-shawdow: 0 2px 10px #09F;
+	-webkit-box-shawdow:	0 2px 10px #09F;
+	-moz-box-shawdow: 0 2px 10px #09F;
+}
+.sb{
+	display:block;
+	border:none;
+	width:200px;
+	height:40px;
+	margin-top:10px;
+	cursor:pointer;
+	font:400 18px Oswald;
+	color:#999;
+}
+.sb:hover{
+	background:#678b97;
+	color:#fff;
+	
+}
+
+/*Classes de herança*/
+.bradius{
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+}
+.fleft{
+	float:left;
+}
+.fright{	
+    float:right;
+}
+/*Múltiplos Estilos*/
+
+.txt,.txt:focuus,.sb,.sb:hover{
+	transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+}
