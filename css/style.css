@@ -1,0 +1,804 @@
+*{
+	margin:0;
+	padding:0;
+	outline:none;
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+body{
+	font:300 16px Oswald;
+
+	overflow: hidden;
+}
+html, body{
+	height: 100%;
+}
+#navigation {
+   position: absolute;
+   width: 220px;
+   height: 300px;
+   margin: 0 auto;
+   margin-top: 0px;
+   font-weight: normal;
+   border:1px solid #f1f1f1;
+   padding:15px;
+}
+#centerDoc {
+   position: relative;
+   padding: 0 0 20px 0;
+   margin-top: 50px;
+   margin-left: 235px;
+
+}
+/*   pagina de cadastro  */
+#login{
+	width:250px;
+	margin:0 auto;
+	position:relative;
+	top:200px;
+	border:1px solid #f1f1f1;
+	padding:15px;
+}
+#cadastrarForm{
+	width:70%;
+	height: 100%;
+	margin:0 auto;
+	border:1px solid #d1d1d1;
+	padding:15px;
+}
+#cadastrarPage{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+#cadastrotipo{
+	margin-left: 40%;
+	margin-top: 15px;
+	padding: 10px;
+}
+#dadosPessoaisForm{
+	height: 400px;
+}
+.cadastroNome{
+	padding: 10px;
+	width: 100%;
+	display: table;
+
+}
+.cadastroNome div{
+	float: left;
+	padding: 5px 15px 5px 5px;
+
+}
+
+.logo{
+	width:200px;
+	height:70px;
+	margin:0 auto;
+	padding:7px;
+	position:relative;
+	top:5px;
+}
+.flash{
+	width:100%;
+	height:45px;
+	background:#9900;
+	opacity:0.5;
+	text-align:center;
+	line-height:40px;
+	font:400 18px Oswald;
+	color:#fff;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#carrinho{
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:15px;
+	-webkit-border-bottom-left-radius:8px;
+	-webkit-border-bottom-right-radius:15px;
+	-moz-border-radius-bottomleft:8px;
+	-moz-border-radius-bottomright:15px;
+	height:40px;
+	width:220px;
+	background:#f1f1f1;
+	text-align:center;
+	position:absolute;
+	right:120px;
+	top:0;
+	z-index:2;
+}
+#carrinho a{
+	padding-top:5px;
+	display:block;
+	color:#999;
+	font:400 18px Oswald;
+}
+#carrinho:hover a{
+	color:#fff;
+}
+#carrinho:hover{
+	background:#678b97;
+	color:#fff;
+}
+
+#cadastrar{
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:15px;
+	-webkit-border-bottom-left-radius:8px;
+	-webkit-border-bottom-right-radius:15px;
+	-moz-border-radius-bottomleft:8px;
+	-moz-border-radius-bottomright:15px;
+	height:40px;
+	width:120px;
+	background:#f1f1f1;
+	text-align:center;
+	position:absolute;
+	overflow: auto;
+	right:0;
+	top:0;
+	z-index:2;
+}
+.message{
+	width:100%;
+	padding:3px;
+	color:#666;
+	background:#f1f1f1;
+	margin:0 auto;
+	text-align:center;
+}
+#cadastrar a{
+	padding-top:5px;
+	display:block;
+	color:#999;
+	font:400 18px Oswald;
+}
+#cadastrar:hover a{
+	color:#fff;
+}
+#cadastrar:hover{
+	background:#678b97;
+	color:#fff;
+}
+.form  label{
+	display:block;
+	padding-top:5px;
+}
+.acomodar{
+	height: 100%;
+	margin:0 auto;
+	position: relative;
+	width: 100%;
+}
+#alterarsenha{
+position: absolute;
+left: 50%;
+top: 100px;
+width: 300px;
+height: 330px;
+padding: 15px;
+border: 2px solid  #e0e0e0;
+margin-left: -150px;
+}
+
+.txt{
+	border:none;
+	height:40px;
+	width:250px;
+	border:thin solid #f1f1f1;
+}
+.txt:focus{
+	border:thin solid #678b97;
+	box-shadow:0 2px 10px #678b97;
+	-webkit-box-shadow:0 2px 10px #678b97;
+	-moz-box-shadow:0 2px 10px #678b97;
+}
+.sb{
+	display:block;
+	border:none;
+	width:200px;
+	height:40px;
+	margin-top:10px;
+	cursor:pointer;
+	font:400 18px Oswald;
+	color:#999;
+}
+.sb:hover{
+	background:#678b97;
+	color:#fff;
+}
+
+/*Classes de herança*/
+.bradius{
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+}
+.fleft{
+	float:left;
+}
+.fright{
+	float:right;
+}
+/*Múltiplos Estilos*/
+.txt,.txt:focus,.sb,.sb:hover,#cadastrar:hover,#cadastrar,#carrinho:hover,#carrinho {
+	transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+}
+#btnAdd {
+	width: 20px;
+	height: 40px;
+	text-align: center;
+}
+#btnSubtrac {
+	width: 20px;
+	height: 30px;
+	text-align: center;
+}
+#txtNumber{
+width: 20px;
+text-align: center;
+}
+#carrinhoTemp{
+	width: 40px;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/*Página Home.php--navigation bar*/
+
+#cssmenu,
+
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  border: none;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu {
+  height: 40px;
+  display: block;
+  border: 1px solid;
+  width: 100%;
+  border-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu > ul {
+  list-style: inside none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu > ul > li {
+  list-style: inside none;
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+	min-width: 100px;
+  padding: 0;
+}
+#cssmenu.align-center > ul {
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  float: none;
+  margin-left: -3px;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-center > ul > li:first-child > a {
+  border-radius: 0;
+}
+#cssmenu > ul > li > a {
+  outline: none;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 1px solid #000000;
+  color: #ffffff;
+  padding: 12px 20px;
+}
+#cssmenu > ul > li:first-child > a {
+  border-radius: 5px 0 0 5px;
+}
+#cssmenu > ul > li > a:after {
+  content: "";
+  position: absolute;
+  border-right: 1px solid;
+  top: -1px;
+  bottom: -1px;
+  right: -2px;
+  z-index: 80;
+  border-color: #3c3c3c;
+}
+#cssmenu ul li.has-sub:hover > a:after {
+  top: 0;
+  bottom: 0;
+}
+#cssmenu > ul > li.has-sub > a:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 6px;
+  border: 5px solid transparent;
+  border-top: 5px solid #000000;
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+  top: 19px;
+}
+#cssmenu > ul > li.has-sub:hover > a {
+  padding-bottom: 14px;
+  z-index: 999;
+  border-color: #b20000;
+}
+#cssmenu ul li.has-sub:hover > ul,
+#cssmenu ul li.has-sub:hover > div {
+  display: block;
+}
+#cssmenu > ul > li.has-sub > a:hover,
+#cssmenu > ul > li.has-sub:hover > a {
+  background: #b20000;
+  border-color: #000000;
+}
+#cssmenu ul li > ul,
+#cssmenu ul li > div {
+  display: none;
+  width: auto;
+  position: absolute;
+  top: 38px;
+  background: #b20000;
+  border-radius: 0 0 5px 5px;
+  z-index: 999;
+  padding: 10px 0;
+}
+#cssmenu ul li > ul {
+  width: 200px;
+}
+#cssmenu ul ul ul {
+  position: absolute;
+}
+#cssmenu ul ul li:hover > ul {
+  left: 100%;
+  top: -10px;
+  border-radius: 5px;
+}
+#cssmenu ul li > ul li {
+  display: block;
+  list-style: inside none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu ul li > ul li a {
+  outline: none;
+  display: block;
+  position: relative;
+  font: 10pt Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 8px 20px;
+}
+#cssmenu,
+#cssmenu ul ul > li:hover > a,
+#cssmenu ul ul li a:hover {
+  background: #990000;
+
+}
+#cssmenu > ul > li > a:hover {
+  background: #b20000;
+  color: #ffffff;
+}
+#cssmenu ul ul a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li.has-sub > a:hover:before {
+  border-top: 5px solid  #ffffff;
+}
+.menuBtn{
+	float:left;
+	height: 37px;
+  border: 1px solid;
+  width: auto;
+  border-color: #000000;
+  margin: 0;
+  padding:12px 20px;
+	color: #FFFFFF;
+	background-color: #990000;
+	text-align: center;
+	font-size: 13px;
+	font-weight:700;
+	border-right: 2px solid #000000;
+	border-bottom: 0px;
+	border-top: 0px;
+}
+.menuBtn:hover{
+	background-color: #b20000;
+}
+.menuBtn-sub{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+  display: block;
+	background-color: #b20000;
+	border-color: #b20000;
+	color: #ffffff;
+	font-size: 13px
+	font-weight:700;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+	padding: 7px 20px 7px 20px;
+	border-width: 0;
+}
+.menuBtn-sub:hover{
+  z-index: 100;
+  border-color: #990000;
+	background-color: #990000;
+	border-width: 0;
+}
+.menuBtn-sub:before{
+	content: "";
+  position: absolute;
+  top: 18px;
+  right: 0;
+
+  border: 5px solid transparent;
+  border-top: 5px solid #000000;
+}
+.menuBtn-sub:after{
+content: "";
+top: 0;
+bottom: 0;
+left: 0;
+}
+/*Página Home.php----video*/
+#homepage{
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+}
+#video{
+	position:absolute;
+  left: 45%;
+  top:  100px;
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+	margin-left: -310px;
+}
+#user{
+	box-sizing: border-box;
+	color: #ffffff;
+	outline: none;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #000000;
+  color: #ffffff;
+  padding: 12px 20px;
+
+}
+
+/*Página orcamento balcão*/
+#infoCliOrc{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+#orcamentoPage{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: auto;
+}
+#divLateral{
+	display: block;
+	background-color: #e0e0e0;
+	float: left;
+	width: 21%;
+	height: 100%;
+	padding:  10px;
+}
+#divtopLateral{
+	border-bottom: 2px solid #b0b0b0;
+	padding-bottom: 20px;
+}
+#Pesquisar{
+	padding: 20px 0 10px 0;
+	text-align: center;
+}
+#qtdsearch{
+	width: 90%;
+}
+#tabelaResultado{
+	border-bottom: 2px solid #b0b0b0;
+	box-sizing: border-box;
+	height: 250px;
+	position: absolute;
+	left: 21%;
+	width: 79%;
+	padding:20px;
+	overflow: auto;
+}
+
+#listas{
+	table-layout: fixed;
+}
+#tablePesquisa{
+	table-layout: fixed;
+}
+#divpesquisaResultdado{
+	box-sizing: border-box;
+	width: 79%;
+	position: absolute;
+	top: 300px;
+	left:21%;
+	bottom: 20px;
+	padding:20px;
+	overflow: auto;
+}
+#divpesquisaResultdado2{
+	box-sizing: border-box;
+	position: absolute;
+	top: 260px;
+	left:21%;
+	bottom: 20px;
+	height: 50%;
+	width: 79%;
+	padding:20px;
+	overflow: auto;
+}
+#prctProduto{
+	width: 100px;
+}
+#dadosCli{
+	position: absolute;
+	top: 0;
+}
+#tabelaNome{
+	position: absolute;
+	top: 0;
+	height: 200px;
+	width: 500px;
+}
+/*Página orcamento */
+
+
+/*Página Catálogo*/
+/*div das tabelas do mostruario*/
+#catalogo{
+	width: 100%;
+	height: 800px;
+	overflow-y: auto;
+}
+#infoCli{
+	width: 100%;
+}
+
+
+/*     pdfCabecalho    */
+#pdfCabecalho{
+
+height: 80px;
+padding: 5px;
+border-bottom: 2px solid #000000;
+border-top: 2px solid #000000;
+width:98.5%;
+margin: 10px;
+}
+#pdfLogo{
+	float:left;
+	padding-top: 3px;
+}
+#pdfTitulo  {
+	padding-left: 45%;
+}
+#pdfDadosPessoais{
+width: 98.5%;
+height: 200px;
+border: 1px solid #000000;
+margin: 5px 10px 5px 10px;
+}
+
+#pdfDadosPessoais ul{
+	height: 100%;
+}
+#pdfDadosPessoais ul > li{
+	width: 33.33%;
+	float: left;
+	height: 100%;
+	border-right: 1px solid;
+	font-size: 11px;
+	padding: 5px;
+}
+#pdfDadosPessoais p{
+	font-size: 11px;
+	padding: 5px 0 0 10px;
+}
+#pdfTabela{
+	width:98.5%;
+	border: 1px solid #000000;
+	margin: 5px 10px 5px 10px
+}
+#pdfTabela div{
+	padding: 10px;
+}
+#pdfTabela table{
+	width: 100%;
+}
+#pdfTabela th{
+	text-align: center;
+}
+#pdfTabela table{
+	width: 100%;
+}
+#contItem{
+	width: 50px;
+}
+#DadosCliente {
+	margin: 0px 10px;
+	width: 90%;
+	height: 100%;
+}
+#dadosVendor{
+margin: 0px 10px;
+ width: 100%;
+  height: 198px;
+	empty-cells: hide;
+}
+#dadosVendor table>td> input,textarea{
+    border: none;
+
+}
+#listasCabpdf{
+	font-weight:500;
+}
+/*   pagina de contato   */
+#contatoPage{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#contatoInfo{
+
+	width: 350px;
+	height:300px;
+	position:absolute;
+	right:2%;
+	top: 140px;
+	z-index: -1;
+	border: 2px solid #710d10;
+	padding-bottom: 100px;
+}
+#contatoInfo ul > li {
+	padding: 15px;
+}
+#contatoInfo ul > li > h2 {
+	padding-bottom: 15px;
+}
+#contatoInfo a{
+	z-index: 3;
+}
+#facebookicon{
+	position: absolute;
+	top: 220px;
+	right: 320px;
+
+}
+
+#map{
+	width: 500px;
+	height: 300px;
+	position: relative;
+	left: 50%;
+	top: 100px;
+	margin-left: -250px;
+}
+.class{
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+
+}
+.row{
+	display: block;
+}
+.emailForm{
+	width: 300px;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+.botaoEnviar{
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #990000;
+	color: #FFFFFF;
+}
+
+/*   pagina de gerenciar orcamento   */
+#contentOrc{
+	width: 100%;
+	height: 100%;
+}
+#searchOrc{
+	width: 20%;
+	float: left;
+	height: 100%;
+	background-color: #b0b0b0;
+	border-collapse: collapse;
+}
+#searchOrc h1{
+	padding: 10px;
+}
+#searchOrc label{
+	padding: 0px 10px 0px 10px;
+}
+
+#tableOrc{
+	width: 80%;
+	float: left;
+	padding: 20px;
+	height: 100%;
+	overflow: auto;
+}
+#tableOrc table > thead > tr > th{
+	font-weight: 600;
+}
+#vendedorOrcamento{
+	padding: 10px;
+}
+#myButton2{
+	height: 40px;
+}
+#searchvendedor{
+	padding: 10px;
+}
+#pesquisarorc{
+	padding: 10px;
+}
+/*   pagina de upload videos  */
+#videoPage{
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+	background-color: #e0e0e0;
+}
+
+#comentariosDiv{
+width: 44.5%;
+height: auto;
+padding: 10px 20px 10px 20px;
+border: 2px solid #c0c0c0;
+top: 470px;
+left: 29.5%;
+position: absolute;
+margin-bottom: 100px;
+}
